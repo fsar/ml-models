@@ -1,5 +1,5 @@
 # ml-models
-Just some machine learning models
+*Just some simple machine learning models...*
 
 * **cnn_binary_classifier.py**
 
