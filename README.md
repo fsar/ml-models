@@ -12,4 +12,4 @@ Structure:
 - 1 output layer
 
 Used image augmentation ([Keras image preprocessing](https://keras.io/preprocessing/image/))
-<br /> Dataset of 10,000 images. Achieved 85% on a training set and 82% on test set.
+<br /> Trained on a dataset of 10,000 images. Achieved 85% on a training set and 82% on test set.
