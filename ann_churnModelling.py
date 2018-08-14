@@ -41,7 +41,7 @@ def run_training(model, X_train, y_train, batch_size = 64, epochs = 400):
 
 # PERFORMANCE EVALUATION AND TUNING
 def run_kFoldCv(X_train, y_train):
-    #  K-Fold Cross Validation
+    # Evaluationg the model: K-Fold Cross Validation
     # Here we built the model with Keras, however the cross val function belongs to scikit-learn
     # So we need to combine keras and sklearn
     # Keras wrapper that will wrap Kfold CV by sklearn into the Keras model
