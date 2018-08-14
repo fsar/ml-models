@@ -78,8 +78,6 @@ def run_training(model, batch_size = 32, epochs = 10):
                              validation_data = test_set,
                              validation_steps = 2000/batch_size)
     
-    
-    
     model.save('cnn_binary_classifier_trained.h5')
     
     return model, training_set.class_indices
