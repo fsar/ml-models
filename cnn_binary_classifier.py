@@ -1,7 +1,10 @@
 # Building a Convolutional Neural Network to classify images of cats and dogs
 
 # Importing the tensorflow (and keras) libraries
+import numpy as np
+
 import tensorflow as tf
+from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Convolution2D
 from tensorflow.keras.layers import MaxPooling2D
@@ -79,9 +82,6 @@ classifier.fit_generator(training_set,
 
 
 # PREDICTION for 1 image
-import numpy as np
-from tensorflow.keras.preprocessing import image
-
 # Get the meaning of 1 and 0 (cat or dog) in a dict
 predictions_indices = training_set.class_indices
 
