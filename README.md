@@ -8,7 +8,7 @@ Structure:
 - 2 convolution layers (32 feature detectors of size 3\*3)
 - 2 max-pooling layers (pool size 2\*2)
 - 1 input layer
-- 1 hidden layer (128 nodes)
+- 2 hidden layer (64 nodes each)
 - 1 output layer
 
 Used image augmentation ([Keras image preprocessing](https://keras.io/preprocessing/image/))
