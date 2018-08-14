@@ -76,3 +76,55 @@ classifier.fit_generator(training_set,
 
 # Results: 
 # Accuracy 85% on training set. 82% on test set.
+
+
+# PREDICTION for 1 image
+import numpy as np
+from tensorflow.keras.preprocessing import image
+
+# Get the meaning of 1 and 0 (cat or dog) in a dict
+predictions_indices = training_set.class_indices
+
+def check(classifier_model, path):
+    
+    # Load the image using image class from keras
+    # Size 64*64 as per the model was trained
+    test_image = image.load_img(path, target_size = (64, 64))                                         
+    test_image = image.img_to_array(test_image)
+    
+    # Add a dimension to the image  
+    test_image = np.expand_dims(test_image, axis = 0)
+    
+    # Run the prediction
+    result = classifier_model.predict(test_image)
+    if result[0][0] == 1:
+        prediction = [key for key, value in predictions_indices.items() if value == 1][0]
+    else:
+        prediction = [key for key, value in predictions_indices.items() if value == 0][0]  
+
+    return (path, prediction)                                         
+
+# Path of the image
+prediction_path = 'dataset/prediction_set/cat_or_dog.jpg'
+
+# Get the prediction result
+prediction_result = check(classifier, prediction_path)
+
+
+"""
+# PREDICTION for 1 or more images
+from tensorflow.keras.preprocessing import image
+
+pred_datagen = ImageDataGenerator(rescale = 1./255)
+pred_set = pred_datagen.flow_from_directory('dataset/prediction_set',
+                                            target_size = (64, 64),
+                                            batch_size = 1,
+                                            class_mode = None,
+                                            shuffle = False)
+
+filenames = pred_set.filenames
+nb_samples = len(filenames)
+
+predict = classifier.predict_generator(pred_set, steps = nb_samples)
+label_dict = training_set.class_indices
+"""
