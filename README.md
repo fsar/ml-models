@@ -3,7 +3,7 @@
 
 * **cnn_binary_classifier.py**
 
-Convolutional Neural Network in python for classifying two classes of images. Using [Keras](https://keras.io/) and Tensorflow.
+Convolutional Neural Network in python for classifying two classes of images. Using [Keras](https://keras.io/) and Tensorflow.<br />
 Structure:
 - 2 convolution layers (32 feature detectors of size 3\*3)
 - 2 max-pooling layers (pool size 2\*2)
