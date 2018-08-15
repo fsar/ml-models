@@ -1,5 +1,5 @@
 # ml-models
-*Just some machine learning models...*
+*Just some machine learning models coded during my free time...*
 
 * **cnn_binary_classifier.py**
 
@@ -8,7 +8,7 @@ Structure:
 - 2 convolution layers (32 feature detectors of size 3\*3)
 - 2 max-pooling layers (pool size 2\*2)
 - 1 input layer
-- 2 hidden layer (64 nodes each)
+- 2 hidden layers (64 nodes each)
 - 1 output layer
 
 Used image augmentation ([Keras image preprocessing](https://keras.io/preprocessing/image/))
@@ -21,7 +21,7 @@ Used image augmentation ([Keras image preprocessing](https://keras.io/preprocess
 Artificial Neural Network in python for churn modelling. Using [Scikit-learn](http://scikit-learn.org/), [Keras](https://keras.io/) and Tensorflow.<br />
 Structure:
 - 1 input layer
-- 2 hidden layer (16 nodes each)
+- 2 hidden layers (16 nodes each)
 - 1 output layer
 
 Pre-processed the data. Applied K-fold Cross Validation and Grid Search to optimize the parameters. 
