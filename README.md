@@ -21,7 +21,18 @@ Used image augmentation ([Keras image preprocessing](https://keras.io/preprocess
 Artificial Neural Network in python for churn modelling. Using [Scikit-learn](http://scikit-learn.org/), [Keras](https://keras.io/) and Tensorflow.<br />
 Structure:
 - 1 input layer
-- 2 hidden layers (16 nodes each)
+- 2 hidden layers (16 nodes each) with dropout
 - 1 output layer
 
 Pre-processed the data. Applied K-fold Cross Validation and Grid Search to optimize the parameters. 
+<br /><br />
+
+
+* **rnn_regressor_stock_price.py**<br />
+
+Recurrent Neural Network **LSTM** in python for predicting stock price. Using [Scikit-learn](http://scikit-learn.org/), [Keras](https://keras.io/) and Tensorflow.<br />
+Structure:
+- 4 LSTM layers (50 nodes each)
+- 1 output layer
+
+Pre-processed the data.
