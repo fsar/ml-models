@@ -1,6 +1,19 @@
 # ml-models
 *Just some machine learning models coded during my free time...*
 
+
+* **ae_model_movie_rating.py** - KAGGLE competition dataset ([Predict movie ratings](https://www.kaggle.com/c/predict-movie-ratings)) - **RMSE scored = 0.95153** <br />
+
+Stacked Auto-Encoder in python for predicting movie ratings. Using [PyTorch](https://pytorch.org/).<br />
+Structure:
+- Encoder (1 input layer + 1 layer of 20 nodes)
+- Code (10 nodes)
+- Decoder (1 layer of 20 nodes + 1 output layer)
+
+Pre-processed the data.
+<br /><br />
+
+
 * **cnn_binary_classifier.py**
 
 Convolutional Neural Network in python for classifying two classes of images. Using [Keras](https://keras.io/) and Tensorflow.<br />
@@ -36,3 +49,4 @@ Structure:
 - 1 output layer
 
 Pre-processed the data.
+<br /><br />
